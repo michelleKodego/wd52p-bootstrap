@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid and column advanced</title>
+
+  <!-- linking bootstrap from the assets folder -->
+  <!-- .css means stylesheets -->
+  <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+  
+  <!-- linking bootstrap from CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+  <style>
+    .container-border {
+      border : 2px solid black;
+      min-height: 100vh;
+      margin-bottom: 20px;
+    }
+
+    #container-fluid {
+      border : 5px solid rgb(234, 14, 14);
+      height: 50vh;
+    }
+
+    .row-height {
+      min-height: 50vh;
+      border : 3px solid green;
+      margin-bottom : 10px;
+    }
+
+    .sample-col  {
+      border: 3px solid salmon;
+      height : 100px;
+      /* margin : 10px; */
+    }
+
+    .sample-col-2 {
+      border : 2px solid aqua;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Basic grid -->
+  <div class="container text-center container-border">
+    <h1 class="text-center">Grids</h1>
+    <div class="row gx-2 gy-1">
+      <div class="sample-col d-flex justify-content-center align-items-center col-sm-12 col-md-4 ">
+        <div class="row">
+          <div class="sample-col-2 col-sm-12 col-md-6">col-sm-12 col-md-6</div>
+          <div class="sample-col-2 col-sm-12 col-md-6">col-sm-12 col-md-6</div>
+        </div>
+      </div>
+      <div class="sample-col d-flex justify-content-center align-items-center col-sm-12 col-md-8 ">
+        <div class="row">
+          <div class="sample-col-2 col-sm-6 col-md-3">col-sm-6 col-md-3</div>
+          <div class="sample-col-2 col-sm-6 col-md-3">col-sm-6 col-md-3</div>
+          <div class="sample-col-2 col-sm-6 col-md-3">col-sm-6 col-md-3</div>
+          <div class="sample-col-2 col-sm-6 col-md-3">col-sm-6 col-md-3</div>
+        </div>
+      </div>
+    </div>
+    <div class="row gx-2 gy-1">
+      <div class="sample-col d-flex justify-content-center align-items-center col-sm-12 col-md-4 ">col-sm-12 col-md-4</div>
+      <div class="sample-col d-flex justify-content-center align-items-center col-sm-12 col-md-4">col-sm-12 col-md-4</div>
+      <div class="sample-col d-flex justify-content-center align-items-center col-sm-12 col-md-4">col-sm-12 col-md-4</div>
+    </div>
+    <div class="row row-cols-sm-1 row-cols-md-2 gx-2 gy-1">
+      <div class="sample-col d-flex justify-content-center align-items-center col">col</div>
+      <div class="sample-col d-flex justify-content-center align-items-center col">col</div>
+    </div>
+  </div>
+
+
+  <div class="container text-center container-border">
+    <h1>Aligment</h1>
+    <div class="row row-height align-items-center">
+      <div class="sample-col col order-1">sample</div>
+      <div class="sample-col col">sample 2</div>
+      <div class="sample-col col order-5">sample 3</div>
+    </div>
+    <div class="row row-height align-items-center">
+      <div class="sample-col col order-last">sample</div>
+      <div class="sample-col col">sample 2</div>
+      <div class="sample-col col order-first">sample 3</div>
+    </div>
+
+    <div class="row row-height align-items-center">
+      <div class="sample-col col align-self-start">sample</div>
+      <div class="sample-col col align-self-center">sample 2</div>
+      <div class="sample-col col align-self-end">sample 3</div>
+    </div>
+  </div>
+
+
+  <div class="container w-50">
+    <div class="clearfix">
+      <img src="https://source.unsplash.com/random?animal" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+    
+      <p>
+        A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+      </p>
+    
+      <p>
+        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+      </p>
+    
+      <p>
+        And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+      </p>
+    </div>
+  
+  </div>
+
+<!-- Column Alignment -->
+
+<!-- Popper JS -->
+<!-- Adding Bootstrap JS from assets folder -->
+<!-- .js means javascript -->
+<!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+
+<!-- Adding Bootstrap JS from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container-md border border-primary clearfix">
+    <h1 class="text-center text-uppercase">Lists</h1>
+    <h3>List unstyled</h3>
+    <ul class="list-unstyled">
+      <li>This is a list.</li>
+      <li>It appears completely unstyled.</li>
+      <li>Structurally, it's still a list.</li>
+      <li>However, this style only applies to immediate child elements.</li>
+      <li>Nested lists:
+        <!-- this is not affected since the class unstyled only works on the element with the class definition on it -->
+        <ul>
+          <li>are unaffected by this style</li>
+          <li>will still show a bullet</li>
+          <li>and have appropriate left margin</li>
+        </ul>
+      </li>
+      <li>This may still come in handy in some situations.</li>
+    </ul>
+    <h3>List Inline</h3>
+    <ul class="list-inline">
+      <!-- inline means sits beside each element -->
+      <li class="list-inline-item">Lorem ipsum dolor sit amet.</li>
+      <li class="list-inline-item">Lorem ipsum dolor sit amet consectetur.</li>
+      <li class="list-inline-item">Lorem ipsum dolor sit.</li>
+    </ul>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
